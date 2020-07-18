@@ -1,1 +1,2 @@
-# Frontend_Memes-page_GSBSP-MP01
+# Frontend_Memes Page_GSBSP-MP01
+Own repository for Frontend Technologies Hackathon conducted by Girlscript Bilaspur
