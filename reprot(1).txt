@@ -1,0 +1,12 @@
+addressal of Problem Statements : -
+a. Navigation Bar: Yes/Created consists of Home, Techno memes,about, dark /light mode
+b. Home Page/Landing Page: Work in Progress
+d. Footer: Completed - Name not mentioned complying with rules of Hackathon
+
+Inclusion of 30 memes in home page : In-progress
+
+
+
+Credits to:
+google images for memes;
+bootstrap for designing the pages.
