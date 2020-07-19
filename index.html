@@ -12,7 +12,7 @@ and open the template in the editor.
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     
+      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
            footer{
@@ -44,11 +44,6 @@ and open the template in the editor.
                transform: translateX(0px);
                
            }
-           .master:hover .social li{
-              
-               transform: translateX(0px);
-               
-           }
            .thumbnail .social li a{
                color: #666;
                background-color: #5cd6d6;
@@ -63,7 +58,7 @@ and open the template in the editor.
                padding: 0;
                margin: 0;
                list-style-type: none;
-               position: absolute;
+               position: relative;
                bottom: 10px;
                right: 0;
                
@@ -75,43 +70,6 @@ and open the template in the editor.
            .thumbnail:hover{
                box-shadow:  10px 11px 0px #03aae8;
            }
-           .master .social li{
-               margin: 0 0 5px;
-               transform: translateX(13px);
-               transition: 0.5s all;
-           }
-           .master:hover .social li{
-              
-               transform: translateX(0px);
-               
-           }
-          
-           .master .social li a{
-               color: #666;
-               background-color: grey;
-               font-size: 16px;
-               line-height: 40px;
-               width: 40px;
-               heigth: 40px;
-               display: block;
-               transition: 0.5s all;
-           }
-           .master .social{
-               padding: 0;
-               margin: 0;
-               list-style-type: none;
-               position: absolute;
-               bottom: 10px;
-               right: 0;
-               
-           }
-           .master .social li a:hover{
-               color: #fff;
-               background-color: #03aae8;
-           }
-           .master:hover{
-               box-shadow:  10px 20px 0px #03aae8;
-           }
           #banner_image{
             padding-top: 75px;
             padding-bottom: 50px;
@@ -121,14 +79,14 @@ and open the template in the editor.
             background-size: cover;
             padding-left: 390px;
             margin:auto;
-            widht:1000px;
-            height: 500px;
+            widht:1500px;
+            height: 750px;
             font-size: 50px;
            }
            #inner_banner_image{
-              
               padding-bottom: 60%;
               margin-bottom: 60%;
+              padding-left: 0px;
               width:80%; 
               margin:auto; 
            }
@@ -136,12 +94,130 @@ and open the template in the editor.
                position: relative;
                padding-top: 6%;
                padding-bottom: 6%;
+               margin-right: 400px;
                margin-top: 12%;
-               margin-rigth:40%;
-              margin-bottom: 60%;
+               margin-bottom: 60%;
                background-color: rgb(204, 204, 204,0.7);
                max-width: 660px;    
            }
+           body{
+               background-color: rgb(13, 13, 13);
+           }
+           .thumbnail{
+               background-color: rgb(13, 13, 13);
+           }
+           .card{
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               transform-style: preserve-3d;
+               transition: all 0.5s ease;
+               margin-top: 10px;
+               margin-left: 75px;
+           }
+           .maincontainer{
+               position: relative;
+               width: 1000px;
+               height: 450px;
+           }
+           .card:hover{
+               transform: rotateY(180deg);
+           }
+           .front{
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               backface-visibility: hidden;
+               background:  rgb(242, 242, 242);
+               color: #333;
+               text-align: center;
+               font-family: 'zilla slab', sans-serif;
+               border-radius: 20px;
+               font-size: 30px;
+               font-weight: solid;
+               
+           }
+            .back{
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               backface-visibility: hidden;
+               background: rgb(128, 128, 128);
+               color: #333;
+               transform: rotateY(180deg);
+               text-align: center;
+               font-family: 'zilla slab', sans-serif;
+               border-radius: 20px;
+               font-size: 30px;
+               font-weight: solid;
+           }
+           p{
+              font-size: 20px;
+              font-weight: normal; 
+           }
+           hr{
+               color: black;
+               background-color: black;
+           }
+           .extra_border {
+                      border-left:  5px solid black;
+                      margin-right: 10%;
+                      margin-left: 5%;
+                   }
+                   .back ul{
+                       position: absolute;
+                       top:50%;
+                       left:50%;
+                       padding: 0;
+                       margin: 0;
+                       transform: translate(-50%, -50%);
+                       display: flex;
+                   }
+                   .back ul li{
+                       list-style: none;
+                       margin:0 15px;
+                   }
+                   .back ul li .fa{
+                       font-size: 30px;
+                       line-height: 60px;
+                       transition: .6s;
+                       color: #000;
+                   }
+                   .back ul li .fa:hover{
+                       background-color: #fff;
+                   }
+                   .back ul li a{
+                       position: relative;
+                       display: block;
+                       width: 60px;
+                       height: 60px;
+                       border-radius: 50%;
+                       background-color: #fff;
+                       text-align: center;
+                       transition: .6s;
+                       box-shadow: 0 5px 4px rgba(0,0,0,.5);
+                   }
+                   .back ul li a:hover{
+                       transform: translate(0,-10px);
+                   }
+                   h3,h4{
+                       font-size: 30px;
+                       color: black;
+                   }
+                   .btn{
+                       margin: 30px 10px;
+                       width: 150px;
+                       padding: 10px;
+                       border-radius: 20px;
+                   }
+                   .btn-second{
+                        background-color: darkorange;
+                       color: #fff;
+                   }
+                    .btn-first{
+                       background-color: darkorange;
+                       color: #fff;
+                   }
     </style>
     </head>
     <body>
@@ -154,58 +230,102 @@ and open the template in the editor.
           </div>
           <ul class="nav navbar-nav navbar-right">
               <li class="nav-item"><a href="#About-section" ><span class="glyphicon glyphicon-th-list"> About</span></a></li>
-              <li class="nav-item"><a href="#CS memes-section"><span class="glyphicon glyphicon-star-empty"> CS </span></a></li>
-              <li class="nav-item"><a href="#"><span class="glyphicon glyphicon-adjust"> Mode </span></a></li>
+              <li class="nav-item"><a href="#memes-section"><span class="glyphicon glyphicon-star-empty"> MEMES </span></a></li>
+              
           </ul>
       </nav>
         </header>
        
-        <!--- jumborton-->
         <div id="banner_image">
             <div id="inner_banner_image">
                 <div id="banner_content">
-                Weclcome to Techno Memes..!
+                    <h1>TECHNO MEMES</h1><hr>
+                    <p> Memes on computer and technology ...<i class="fa fa-smile-o" style="background-color:transparent" ></i><i class="fa fa-smile-o" style="background-color:transparent"></i></p>
+                    <a class="btn btn-first" href="#">Like Meme</a>
+                     <a class="btn btn-second" href="#">Subscribe us</a>
                 </div>
             </div>
         </div>
-    
+     
+        <!--- About -->
+        <div class="container" id="About-section">
+        <div class="maincontainer">
+            <div class="card">
+                <!--frontpage of about-->
+                <div class="front"> 
+                    <h3>ABOUT</h3><hr>
+                    <p>
+                    <center> This is a offical site,"TECHNO MEMES" for memes about programming freaks and computer engines.</center>
+                    </p>
+                    <hr>
+                   
+                                   <div style="font-size:23px;text-align: left">
+                                       
+                                       <center>  &nbsp;&nbsp; Over the past decade or so, memes have become a deep-rooted element of the digital world, &nbsp;&nbsp;particularly on social media.<br></center>
+                                      
+                                            <center>
+                                                    "TECHNO MEMES",founded in &nbsp;2012, is at the forefront of reporting some entertaining content. This site posts 
+                                                     memes,  original &nbsp;&nbsp;features that detail programmer and all about a computery life.
+                                                    The Memes marketed in pur site &nbsp;&nbsp;is the kind of out-of-the-box thinking that can set the marketing landscape ablaze.
+                                            </center>
+                                   </div>
+                </div>
+                <!--backpage of about-->
+                    <div class="back"> 
+                        <h3>Please Do Like and Subscribe</h3><hr>
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                        <h4><center> KEEP LAUGHNG @TECHNO_MEME </center></h4>
+                    </div>
+                </div>
+        </div>
+        </div>
+       
+
+       
         
         <!---frist block of programming memes-->
+        <section id="memes-section">
         <div style="text-align: center;color: white;background-color:#404040; margin-top: 0">
         <h2>PROGRAMMING MEMES</h2>
         </div>
-        <div style="background-color:#ffbb99">
+        </section>
+        
+        <div style="background-color:rgb(13, 13, 13)">
         <div class="container" style="padding-top:2%">
           <div class="row text-center">
                 <div class="col-md-3 col-sm-6 col-lg-4">
                    <div class="thumbnail" style="padding:0 0 0 0">
-                      <a href="#" class="image">
-                        <img src="p-1.jpeg" alt="meme" >
+                      <a href="#meme-1" class="image">
+                        <img id="meme-1" src="p-1.jpeg" alt="meme" >
                       </a>
                        <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-1"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                    </div>
                 </div>
               
                 <div class="col-md-3 col-sm-6 col-lg-4">
                      <div class="thumbnail" style="padding:0 0 0 0">
-                         <a href="#" class="image">
-                        <img src="p-10.jpeg" alt="meme">
+                         <a href="#meme-2" class="image">
+                        <img id="meme-2" src="p-10.jpeg" alt="meme">
                          </a>
                          <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-2"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                      </div>
                 </div>
               
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                            <img src="p-2.png" alt="meme">
+                        <a href="#meme-3" class="image">
+                            <img id="meme-3" src="p-2.png" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-3"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                 </div>
@@ -213,38 +333,38 @@ and open the template in the editor.
         </div>
         </div>
         
-        <div style="background-color:#ff9966">
+        <div style="background-color:rgb(13, 13, 13)">
         <div class="container" style="padding-top:2%">
           <div class="row text-center">
                 <div class="col-md-3 col-sm-6  col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="p-11.jpg" alt="meme">
+                        <a href="#meme-4" class="image">
+                        <img id="meme-4" src="p-11.jpg" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-4"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                 </div>
                 </div>
               
                 <div class="col-md-3 col-sm-6  col-lg-4">
-                    <div class="master">
-                        <a href="#" class="image">
-                    <img src="p-8.jpeg" alt="meme" style="heigth:530px; width:375px">
+                    <div class="thumbnail">
+                        <a href="#meme-5" class="image">
+                    <img id="meme-5" src="p-8.jpeg" alt="meme" style="heigth:530px; width:375px; padding-bottom: 0px">
                         </a>
                     <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-5"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                 </div>
                 </div>
               
                 <div class="col-md-3 col-sm-6  col-lg-4">
-                    <div class="master">
-                        <a href="#" class="image">
-                        <img src="p-7.jpeg" alt="meme" style="heigth:750px; width:375px">
+                    <div class="thumbnail">
+                        <a href="#meme-6" class="image">
+                        <img id="meme-6" src="p-7.jpeg" alt="meme" style="heigth:750px; width:375px;padding-bottom: 0px">
                         </a>
                          <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-6"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                 </div>
                 </div>
@@ -252,16 +372,16 @@ and open the template in the editor.
         </div>
         </div>
         
-        <div style="background-color: #ff661a">
+        <div style="background-color:rgb(13, 13, 13)">
         <div class="container" style="padding-top:2%">
           <div class="row text-center">
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="p-4.jpg" alt="meme">
+                        <a href="#meme-7" class="image">
+                        <img id="meme-7" src="p-4.jpg" alt="meme">
                         </a>
                          <ul class="social" style="position:relative">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-7"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                 </div>
                 </div>
@@ -269,22 +389,22 @@ and open the template in the editor.
                 <div class="col-lg-4">
                     <div class="row">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="p-5.jpeg" alt="meme">
+                        <a href="#meme-8" class="image">
+                        <img id="meme-8" src="p-5.jpeg" alt="meme">
                         </a>
                          <ul class="social" style="position:relative">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-8"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                     </div>
                     
                     <div class="row">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="p-6.jpg" alt="meme">
+                        <a href="#meme-9" class="image">
+                        <img id="meme-9" src="p-6.jpg" alt="meme">
                         </a>
                          <ul class="social" style="position:relative">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-9"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                 </div>
                 </div>
@@ -292,23 +412,23 @@ and open the template in the editor.
               
                 <div class="col-lg-4">
                     <div class="row">
-                        <div class="master">
-                            <a href="#" class="image">
-                        <img src="p-9.jpg" alt="meme" style="heigth:750px; width:375px">
+                        <div class="thumbnail">
+                            <a href="#meme-10" class="image">
+                        <img id="meme-10" src="p-9.jpg" alt="meme" style="heigth:750px; width:375px">
                             </a>
                              <ul class="social" style="position:relative">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-10"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                         </div>
                     
                     <div class="row">
-                        <div class="master">
-                            <a href="#" class="image" style="position:relative">
-                        <img src="p-3.jpg" alt="meme" style="heigth:750px; width:375px">
+                        <div class="thumbnail">
+                            <a href="#meme-11" class="image" style="position:relative">
+                        <img id="meme-11" src="p-3.jpg" alt="meme" style="heigth:750px; width:375px">
                             </a>
                       <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-11"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>   
             </div>
         </div>
@@ -321,38 +441,38 @@ and open the template in the editor.
         <div style="text-align: center; color: white; background-color:#404040; margin-top: 0">
          <h2>TECHNICAL MEMES</h2>
         </div>
-        <div style="background-color:#ffbb99">
+        <div style="background-color:rgb(13, 13, 13)">
         <div class="container"  style="padding-top:2%">
           <div class="row text-center">
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="f-5.jpeg" alt="meme">
-                        <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
-                       </ul>
-                        </a>
-                    </div>
-                </div>
-              
-                <div class="col-md-3 col-sm-6 col-lg-4">
-                    <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="f-4.jpeg" alt="meme">
+                        <a href="#meme-12" class="image">
+                        <img id="meme-12" src="f-5.jpeg" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-12"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                 </div>
               
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="f-1.jpeg" alt="meme" >
+                        <a href="#meme-13" class="image">
+                        <img id="meme-13" src="f-4.jpeg" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-13"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                       </ul>
+                    </div>
+                </div>
+              
+                <div class="col-md-3 col-sm-6 col-lg-4">
+                    <div class="thumbnail" style="padding:0 0 0 0">
+                        <a href="#meme-14" class="image">
+                        <img id="meme-14" src="f-1.jpeg" alt="meme" >
+                        </a>
+                        <ul class="social">
+                           <li><a href="#meme-14"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
             </div>
         </div>
@@ -360,38 +480,38 @@ and open the template in the editor.
         </div>
         </div>
     
-         <div style="background-color:#ff9966">
+         <div style="background-color:rgb(13, 13, 13)">
          <div class="container"  style="padding-top:2%">
           <div class="row text-center">
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="f-2.jpeg" alt="meme">
+                        <a href="#meme-15" class="image">
+                        <img id="meme-15" src="f-2.jpeg" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-15"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                 </div>
               
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="f-6.jpeg" alt="meme">
+                        <a href="#meme-16" class="image">
+                        <img id="meme-16" src="f-6.jpeg" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-16"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                 </div>
               
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="f-7.jpeg" alt="meme">
+                        <a href="#meme-17" class="image">
+                        <img id="meme-17" src="f-7.jpeg" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-17"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                 </div>
             </div>
@@ -399,36 +519,36 @@ and open the template in the editor.
          </div>
          </div>
          
-          <div style="background-color:#ff661a">
+          <div style="background-color:rgb(13, 13, 13)">
          <div class="container"  style="padding-top:2%">
           <div class="row text-center">
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="f-9.jpeg" alt="meme">
+                        <a href="#meme-18" class="image">
+                        <img id="meme-18" src="f-9.jpeg" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-18"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="f-8.jpeg" alt="meme">
+                        <a href="#meme-19" class="image">
+                        <img id="meme-19" src="f-8.jpeg" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-19"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="f-3.jpeg" alt="meme">
+                        <a href="#meme-20" class="image">
+                        <img id="meme-20" src="f-3.jpeg" alt="meme">
                         </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-20"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                 </div>
                 </div>
@@ -440,38 +560,38 @@ and open the template in the editor.
          <h2>COMPUTER SCIENCES MEMES</h2>
          </div>
          
-        <div style="background-color:#ffbb99">
+        <div style="background-color:rgb(13, 13, 13)">
          <div class="container"  style="padding-top:2%">
           <div class="row text-center">
                 <div class="col-md-3 col-sm-6 col-lg-6" >
                     <div class="row">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="g-6.png" alt="meme">
+                        <a href="#meme-21" class="image">
+                        <img id="meme-21" src="g-6.png" alt="meme">
                         </a>
-                        <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                        <ul class="social" style="position: relative">
+                           <li><a href="#meme-21"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                     </div>
                     <div class="row">
-                         <div class="master">
-                             <a href="#" class="image">
-                        <img src="g-11.jpeg" alt="meme" style="heigth:750px; width:375px">
+                         <div class="thumbnail">
+                             <a href="#meme-22" class="image">
+                        <img id="meme-22" src="g-11.jpeg" alt="meme" style="heigth:750px; width:375px">
                              </a>
-                             <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                             <ul class="social" style="position: relative">
+                           <li><a href="#meme-22"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-lg-6">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                         <a href="#" class="image">
-                        <img src="g-3.jpg" alt="meme">
+                         <a href="#meme-23" class="image">
+                        <img id="meme-23" src="g-3.jpg" alt="meme">
                          </a>
                         <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-23"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -480,26 +600,26 @@ and open the template in the editor.
          </div>
           </div>
          
-         <div style="background-color:#ff9966">
+         <div style="background-color:rgb(13, 13, 13)">
         <div class="container"  style="padding-top:2%">
           <div class="row text-center">
                 <div class="col-md-3 col-sm-6 col-lg-6">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="g-8.png" alt="meme">
+                        <a href="#meme-24" class="image">
+                        <img id="meme-24" src="g-8.png" alt="meme">
                         </a>
                          <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-24"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-lg-6" >
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="g-7.jpg" alt="meme">
+                        <a href="#meme-25" class="image">
+                        <img id="meme-25" src="g-7.jpg" alt="meme">
                         </a>
                          <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-25"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                 </div>
                 </div>
@@ -507,37 +627,37 @@ and open the template in the editor.
          </div>
          </div>
         
-          <div style="background-color:#ff661a">
+          <div style="background-color:rgb(13, 13, 13)">
         <div class="container"  style="padding-top:2%">
           <div class="row text-center">
                     <div class="col-md-3 col-sm-6 col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="g-9.jpeg" alt="meme">
+                        <a href="#meme-26" class="image">
+                        <img id="meme-26" src="g-9.jpeg" alt="meme">
                         </a>
                          <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-26"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                 </div>
                 
                 <div class="col-md-3 col-sm-6  col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="g-5.jpg" alt="meme">
+                        <a href="#meme-27" class="image">
+                        <img id="meme-27" src="g-5.jpg" alt="meme">
                         </a>
                          <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-27"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6  col-lg-4">
                     <div class="thumbnail" style="padding:0 0 0 0">
-                        <a href="#" class="image">
-                        <img src="g-4.jpg" alt="meme">
+                        <a href="#meme-28" class="image">
+                        <img id="meme-28" src="g-4.jpg" alt="meme">
                         </a>
                          <ul class="social">
-                           <li><a href="#"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
+                           <li><a href="#meme-28"><i class="fa fa-thumbs-up" onclick="myfunction(this)"></i></a></li>
                        </ul>
                 </div>
         </div>
